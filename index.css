@@ -1,48 +1,50 @@
-*{
-    margin: 0;
+
+
+ *{
     padding: 0;
-}
+    margin: 0;
+ }
 
-body{
-    width:100%;
+ body{
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #606c38;
-    
-}
-
-.box{
-    background-color:blanchedalmond;
+    background-color: bisque;
+    /* display: flex;
+    justify-content: center;    we can use flex and grid both to display the boxes 
+    align-items: center; */
+    display: grid;
+    place-items:center;
+ }
+ .box{
+    background-color:rosybrown;
     padding: 30px;
     width: 40vh;
     border-radius: 10px;
-}
-.qr-header h1{
-    font-size: 23px;
+ }
+
+ .qr-header h1{
+    font-size: 22px;
     text-align: center;
-    color:black;
-    margin-bottom: 30px;
-    text-transform: uppercase   ;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom:30px;
+ }
 
-}
-
-.qr-header input{
+ .qr-header input{
     width: 100%;
-    margin-block: 12px;
-}
+    margin-block: 20px;
+ }
 
-.qr-header input, select{
+ .qr-header input, select{
     padding: 8px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 20px;
     outline: none;
     border: 2px solid black;
-}
+ }
 
 .qr-header label{
-    font-size:20px;
+    font-size: 20px;
 }
 
 .qr-header div{
@@ -50,29 +52,34 @@ body{
     justify-content: space-between;
 }
 
-button{
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 6px;
-    margin-inline:2px;
-    text-decoration: none;
-    cursor: pointer;
+.qr-body{
+    /* display: flex;
+    align-items: center;      we can do it with flex and (grid) aslo
+    justify-content: center; */
+    display: grid;
+    place-items: center;
+    padding: 20px;
 }
 
 .qr-footer{
-    margin-top: 20px;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    
+   
 }
 
-.qr-body{
-    display: grid;
-    place-items: center;
-    padding: 50px;
+a{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    text-decoration: none;
+    cursor:pointer;
 }
-
 .qr-body img{
     max-height: 100%;
     max-width: 100%;
