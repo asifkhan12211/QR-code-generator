@@ -89,3 +89,12 @@ a{
     border-radius: 6px;
 
 }
+
+/* responsive */
+
+@media screen and (max-width: 520px) {
+    .box{
+        width: 300px;
+    }
+
+}
